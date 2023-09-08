@@ -4,4 +4,4 @@ In the mid 1800s, Dr. Ignaz Semmelweis was an obstetrician at Vienna General Hos
 In 1847, Dr. Semmelweis instated a policy where doctors had to use a chlorine solution to wash their hands between performing autopsies and seeing patients. The maternal mortality rate drastically decreased as seen in the plot below. Sadly, germ theory (the idea that there are particles that cause disease) was not widely accepted at the time, so his hypothesis was rejected by most doctors.
 In this project, ...
 
-[![](hhttps://img.shields.io/badge/Tidyverse-white?logo=tidyverse&logoColor=%231A162D)](#) [![](https://img.shields.io/badge/Patchwork-white)](#)
+[![](https://img.shields.io/badge/Tidyverse-white?logo=tidyverse&logoColor=%231A162D)](#) [![](https://img.shields.io/badge/Patchwork-white)](#)
