@@ -27,6 +27,8 @@ In this project, I investigate :
 
 3.  The average death rates in the Vienna General Hospital both before and after pathological autopsies were introduced in 1823
 
+[![](https://img.shields.io/badge/R-white?logo=R&logoColor=%23276DC3)](#) [![](https://img.shields.io/badge/Tidyverse-white?logo=tidyverse&logoColor=%231A162D)](#) [![](https://img.shields.io/badge/Patchwork-white)](#) 
+
 ![](https://www.sciencesetavenir.fr/assets/img/2018/07/02/cover-r4x3w1200-5b39fdfe82ba3-ignace-semmelweis.jpg)
 
 
