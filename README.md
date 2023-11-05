@@ -12,5 +12,26 @@ In this project, I extract :
 
 3.  The average death rates in the Vienna General Hospital both before and after pathological autopsies were introduced in 1823
 
+<br>
+
+<img src="images/Number of births by city.jpg"  style="width:400px;" />
+<img src ="images/Number of deaths by clinic.jpg"  style="width:400px;" />
+
+<br>
+
 [![](https://img.shields.io/badge/R-white?logo=R&logoColor=%23276DC3)](#) [![](https://img.shields.io/badge/Tidyverse-white?logo=tidyverse&logoColor=%231A162D)](#) [![](https://img.shields.io/badge/Patchwork-white)](#) 
 
+Skills developed: Manipulation, Visualization, Probability & statistics
+
+----
+
+#### Main results 
+
+Before handwashing implantation, the average death rate of clinic_1 is 0.0799393, and the average death rate of clinic_2 is 0.0478738. Both clinics were in Vienna. In Vienna General Hospital, the average death rate was 0.0116602 before handwashing implantation and 0.0587796 after implantation. 
+
+----
+
+#### Future work
+
+- Find more data on clinics to explain why clinic_1 had a lower average death rate
+ 

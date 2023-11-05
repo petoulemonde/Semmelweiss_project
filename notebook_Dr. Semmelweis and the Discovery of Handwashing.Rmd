@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # The Discovery of Handwashing
 
-## Project description
+<img src="https://www.sciencesetavenir.fr/assets/img/2018/07/02/cover-r4x3w1200-5b39fdfe82ba3-ignace-semmelweis.jpg" alt="drawing" style="width:400px;"/>
 
 In the mid 1800s, Dr. Ignaz Semmelweis was an obstetrician at Vienna General Hospital. At the time, maternal death due to puerperal fever was common, but he was particularly concerned that the death rate in his clinic (Clinic 1) was much higher than the death rate in another clinic at Vienna General Hospital (Clinic 2). So what was the difference between these two clinics? Doctors and midwives worked in Clinic 1, while only midwives worked in Clinic 2. This led Dr. Semmelweis to hypothesize that doctors carried deadly "cadaverous particles" from their autopsies to their patients in Clinic 2.
 
@@ -29,10 +29,9 @@ In this project, I investigate :
 
 [![](https://img.shields.io/badge/R-white?logo=R&logoColor=%23276DC3)](#) [![](https://img.shields.io/badge/Tidyverse-white?logo=tidyverse&logoColor=%231A162D)](#) [![](https://img.shields.io/badge/Patchwork-white)](#) 
 
-![](https://www.sciencesetavenir.fr/assets/img/2018/07/02/cover-r4x3w1200-5b39fdfe82ba3-ignace-semmelweis.jpg)
+Skills developed: Manipulation, Visualization, Probability & statistics
 
-
-## Libraries
+## Load libraries
 ```{r, warning = FALSE}
 # install.packages("librarian")
 librarian::shelf(tidyverse, 
@@ -41,7 +40,7 @@ librarian::shelf(tidyverse,
 ```
 
 
-## Datasets
+## Load datasets
 
 ```{r importations, warning = FALSE}
 clinic_data <- read.csv("datasets/clinic_data.csv")
@@ -92,7 +91,7 @@ This contains yearly hospital-level data on births and maternal deaths.
 
 <sup>1</sup><a href="http://graphics8.nytimes.com/images/blogs/freakonomics/pdf/the%20etiology,%20concept%20and%20prophylaxis%20of%20childbed%20fever.pdf">Ignaz Semmelweis: The etiology, concept, and prophylaxis of childbed fever.</a>
 
-### dataset summaries
+### Dataset summaries
 ```{r general_explorations, warning = FALSE}
 # ---------- 2. Data exploration ----------
 print(data.frame(
@@ -188,7 +187,7 @@ q <- ggplot(clinic_data, aes(x=year, y = deaths, fill = clinic)) +
   labs(title = "Number of deaths, by year and clinic", y = "Number of deaths") +
   geom_col(position = position_dodge2())
 
-ggsave("outputs/Number of deaths by clinic.jpg", plot = (p1 + p2) / q)
+ggsave("images/Number of deaths by clinic.jpg", plot = (p1 + p2) / q)
 ```
 ### Hospital dataset
 
@@ -230,20 +229,20 @@ q <- ggplot(hospital_data, aes(x=year, y = births, fill = hospital)) +
 p1 <- hospital_data %>%
         filter(hospital == "Dublin") %>%
         ggplot(aes(x=year, y = births, fill = year)) + 
-  labs(title = "Number of city by year, Dublin", y = "Number of births") +
+  labs(title = "Number of births by year, Dublin", y = "Number of births") +
           geom_col() +
           theme(legend.position = "none")
 p2 <- hospital_data %>%
         filter(hospital == "Vienna") %>%
         ggplot(aes(x=year, y = births, fill = year)) + 
-  labs(title = "Number of city by year, Vienna", y = "Number of births") +
+  labs(title = "Number of births by year, Vienna", y = "Number of births") +
           geom_col() +
           theme(legend.position = "none")
 q <- ggplot(hospital_data, aes(x=year, y = births, fill = hospital)) + 
-  labs(title = "Number of city, by year and city", y = "Number of births") +
+  labs(title = "Number of births, by year and city", y = "Number of births") +
   geom_col(position = position_dodge2())
 
-ggsave("outputs/Number of births by city.jpg", plot = (p1 + p2) / q)
+ggsave("images/Number of births by city.jpg", plot = (p1 + p2) / q)
 ```
 
 -   `deaths`:
